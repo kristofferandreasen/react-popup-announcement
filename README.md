@@ -187,7 +187,7 @@ In order to see the banner again, you will need to open the localhost link in in
 ## Contributing
 
 Your contributions are always welcome!
-Please have a look at the [contribution guidelines](https://github.com/kristofferandreasen/react-announcement/blob/master/CONTRIBUTING.md) first 🎉
+Please have a look at the [contribution guidelines](https://github.com/kristofferandreasen/react-popup-announcement/blob/master/CONTRIBUTING.md) first 🎉
 
 ## License
 
