@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Announcement from 'react-announcement'
-import Logo from './logo-small.png'
+import Logo from './banner-image.jpg'
 import { FiBook } from "react-icons/fi";
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
@@ -38,8 +38,9 @@ class App extends Component {
         </div>
         <Announcement
           title="Here is your component"
-          subtitle="The best announcement component for React is finally here. Install it in all your projects."
+          subtitle="The best announcement component for React is finally here. Install it in all your projects. this is a test of length"
           link="https://github.com/kristofferandreasen/react-announcement"
+          buttonText="Click here"
           imageSource={Logo}
           closeIconSize={25}
         />
