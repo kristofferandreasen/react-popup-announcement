@@ -137,7 +137,7 @@ const Announcement: React.FunctionComponent<ComponentProps> = ({
 
   return showBanner ? (
     <>
-      <div style={styles.overlay}></div>
+      <div style={styles.overlay} onClick={fadeOut}></div>
       <style children={animationKeyframes} />
       <div
         style={{
