@@ -1,9 +1,7 @@
-<p align="center">
-  <img src="./media/small-header.png" alt="react-announcement">
-</p>
+# React Popup Announcement
 
 <div align="center">
-  📣 Push out beautiful website announcements in React 📣
+  🖥️ Create beautiful pop-ups on your website with React. This library is especially suited for static websites 🖥️
 </div>
 <div align="center">
   This simple and modern component makes it easier for you to engage with your visitors in a non-intrusive way.
@@ -70,20 +68,20 @@ npm install --save react-announcement
 ## Usage
 
 ```tsx
-import * as React from 'react'
-import Logo from './logo.svg'
-import Announcement from 'react-announcement'
+import * as React from "react";
+import Logo from "./logo.svg";
+import Announcement from "react-announcement";
 
 class Example extends React.Component {
-  render () {
+  render() {
     return (
       <Announcement
-          title="Here is your component"
-          subtitle="The best announcement component for React is finally here. Install it in all your projects."
-          link="https://github.com/kristofferandreasen/react-announcement"
-          imageSource={Logo}
+        title="Here is your component"
+        subtitle="The best announcement component for React is finally here. Install it in all your projects."
+        link="https://github.com/kristofferandreasen/react-announcement"
+        imageSource={Logo}
       />
-    )
+    );
   }
 }
 ```
@@ -104,12 +102,12 @@ The `animateInDuration` changes the duration of the fade-in animation.
 The `animateOutDuration` changes the duration of the fade-out animation - this is fired on the click of the close icon.
 
 ```tsx
-import * as React from 'react'
-import Logo from './logo.svg'
-import Announcement from 'react-announcement'
+import * as React from "react";
+import Logo from "./logo.svg";
+import Announcement from "react-announcement";
 
 class Example extends React.Component {
-  render () {
+  render() {
     return (
       <Announcement
         title="Here is your component"
@@ -122,24 +120,25 @@ class Example extends React.Component {
         animateInDuration={2000}
         animateOutDuration={500}
       />
-    )
+    );
   }
 }
 ```
 
 ## Properties
 
-Property | Type | Required | Default value | Description
-:--- | :--- | :--- | :--- | :---
-`title`|string|yes|| The title of the announcement
-`subtitle`|string|yes|| The general card text on the announcement
-`imageSource`|string|yes|| The image source string used on the left side of the image. Use a square image for the best results. Dimensions are 68x68 pixels.
-`link`|string|yes|| The link used when the announcement is clicked.
-`daysToLive`|number|no|7| An optional property specifying the number of days the cookie will live before the announcement is shown again to a user.
-`secondsBeforeBannerShows`|number|no|5| The number of seconds a user has to keep the page open before the announcement is shown.
-`animateInDuration`|number|no|1000| Changes the duration of the fade-in animation.
-`animateOutDuration`|number|no|30| Change the duration of the fade-out animation.
------
+| Property                   | Type   | Required | Default value | Description                                                                                                                       |
+| :------------------------- | :----- | :------- | :------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
+| `title`                    | string | yes      |               | The title of the announcement                                                                                                     |
+| `subtitle`                 | string | yes      |               | The general card text on the announcement                                                                                         |
+| `imageSource`              | string | yes      |               | The image source string used on the left side of the image. Use a square image for the best results. Dimensions are 68x68 pixels. |
+| `link`                     | string | yes      |               | The link used when the announcement is clicked.                                                                                   |
+| `daysToLive`               | number | no       | 7             | An optional property specifying the number of days the cookie will live before the announcement is shown again to a user.         |
+| `secondsBeforeBannerShows` | number | no       | 5             | The number of seconds a user has to keep the page open before the announcement is shown.                                          |
+| `animateInDuration`        | number | no       | 1000          | Changes the duration of the fade-in animation.                                                                                    |
+| `animateOutDuration`       | number | no       | 30            | Change the duration of the fade-out animation.                                                                                    |
+
+---
 
 ## Responsive
 
@@ -156,20 +155,27 @@ The project is bootstrapped with [create-react-library](https://github.com/trans
 To start developing, you need to open two terminals.
 
 In the first tab, run from the main directory:
+
 ```
 npm start
 ```
+
 This will activate rollup to watch for any changes to your src directory and build the dist everytime.
 
 In another terminal, navigate to the example folder:
+
 ```
 cd example
 ```
+
 Then run:
+
 ```
 npm install
 ```
+
 and finally:
+
 ```
 npm start
 ```

@@ -9,7 +9,7 @@ Before sending a Pull Request, consider making an issue in the repository and as
 You need to clone the repository and install dependencies.
 
 ```bash
-git clone https://github.com/kristofferandreasen/react-announcement.git
+git clone https://github.com/kristofferandreasen/react-popup-announcement.git
 ```
 
 Then you can install dependencies.
