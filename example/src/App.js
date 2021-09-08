@@ -22,12 +22,12 @@ class App extends Component {
     return (
       <div style={backgroundStyles}>
         <div style={center}>
-          <h1 className="title">react-announcement</h1>
+          <h1 className="title">react-popup-announcement</h1>
           <p className="subtitle">Wait a couple of seconds and see the banner</p>
 
           <br></br>
           
-          <a style={buttonStyle} href="https://github.com/kristofferandreasen/react-announcement">
+          <a style={buttonStyle} href="https://github.com/kristofferandreasen/react-popup-announcement">
             Documentation
             <FiBook 
               style={icon}
@@ -39,7 +39,7 @@ class App extends Component {
         <Announcement
           title="Here is your component"
           subtitle="The best announcement component for React is finally here. Install it in all your projects. this is a test of length"
-          link="https://github.com/kristofferandreasen/react-announcement"
+          link="https://github.com/kristofferandreasen/react-popup-announcement"
           buttonText="Click here"
           imageSource={Logo}
           closeIconSize={25}
