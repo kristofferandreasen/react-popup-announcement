@@ -12,13 +12,13 @@
 
 <div align="center">
   <!-- NPM version -->
-  <a href="https://www.npmjs.com/package/react-announcement">
-    <img src="https://img.shields.io/npm/v/react-announcement.svg"
+  <a href="https://www.npmjs.com/package/react-popup-announcement">
+    <img src="https://img.shields.io/npm/v/react-popup-announcement.svg"
       alt="NPM version" />
   </a>
   <!-- Downloads -->
-  <a href="https://www.npmjs.com/package/react-announcement">
-    <img src="https://img.shields.io/npm/dt/react-announcement.svg"
+  <a href="https://www.npmjs.com/package/react-popup-announcement">
+    <img src="https://img.shields.io/npm/dt/react-popup-announcement.svg"
       alt="Downloads" />
   </a>
   <!-- Standard -->
@@ -30,19 +30,19 @@
 
 <div align="center">
   <h3>
-    <a href="https://kristofferandreasen.github.io/react-announcement/">
+    <a href="https://kristofferandreasen.github.io/react-popup-announcement/">
       Example Website
     </a>
     <span> | </span>
-    <a href="https://www.npmjs.com/package/react-announcement">
+    <a href="https://www.npmjs.com/package/react-popup-announcement">
       npm module
     </a>
     <span> | </span>
-    <a href="https://github.com/kristofferandreasen/react-announcement#properties">
+    <a href="https://github.com/kristofferandreasen/react-popup-announcement#properties">
       Properties
     </a>
     <span> | </span>
-    <a href="https://github.com/kristofferandreasen/react-announcement#contributing">
+    <a href="https://github.com/kristofferandreasen/react-popup-announcement#contributing">
       Contributing
     </a>
   </h3>
@@ -62,7 +62,7 @@
 ## Install
 
 ```bash
-npm install --save react-announcement
+npm install --save react-popup-announcement
 ```
 
 ## Usage
@@ -70,7 +70,7 @@ npm install --save react-announcement
 ```tsx
 import * as React from "react";
 import Logo from "./logo.svg";
-import Announcement from "react-announcement";
+import Announcement from "react-popup-announcement";
 
 class Example extends React.Component {
   render() {
@@ -78,7 +78,7 @@ class Example extends React.Component {
       <Announcement
         title="Here is your component"
         subtitle="The best announcement component for React is finally here. Install it in all your projects."
-        link="https://github.com/kristofferandreasen/react-announcement"
+        link="https://github.com/kristofferandreasen/react-popup-announcement"
         imageSource={Logo}
       />
     );
@@ -104,7 +104,7 @@ The `animateOutDuration` changes the duration of the fade-out animation - this i
 ```tsx
 import * as React from "react";
 import Logo from "./logo.svg";
-import Announcement from "react-announcement";
+import Announcement from "react-popup-announcement";
 
 class Example extends React.Component {
   render() {
@@ -112,7 +112,7 @@ class Example extends React.Component {
       <Announcement
         title="Here is your component"
         subtitle="The best announcement component for React is finally here. Install it in all your projects."
-        link="https://github.com/kristofferandreasen/react-announcement"
+        link="https://github.com/kristofferandreasen/react-popup-announcement"
         imageSource={Logo}
         daysToLive={3}
         secondsBeforeBannerShows={20}

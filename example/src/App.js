@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Announcement from 'react-announcement'
+import Announcement from 'react-popup-announcement'
 import Logo from './banner-image.jpg'
 import { FiBook } from "react-icons/fi";
 import { withCookies, Cookies } from 'react-cookie';
