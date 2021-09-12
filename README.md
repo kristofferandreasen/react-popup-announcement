@@ -71,7 +71,7 @@ npm install --save react-popup-announcement
 
 ```tsx
 import * as React from "react";
-import Logo from "./logo.svg";
+import Image from "./image.svg";
 import Announcement from "react-popup-announcement";
 
 class Example extends React.Component {
@@ -81,7 +81,8 @@ class Example extends React.Component {
         title="Here is your component"
         subtitle="The best announcement component for React is finally here. Install it in all your projects."
         link="https://github.com/kristofferandreasen/react-popup-announcement"
-        imageSource={Logo}
+        imageSource={Image}
+        buttonText="Click here!"
       />
     );
   }
@@ -105,7 +106,7 @@ The `animateOutDuration` changes the duration of the fade-out animation - this i
 
 ```tsx
 import * as React from "react";
-import Logo from "./logo.svg";
+import Image from "./image.svg";
 import Announcement from "react-popup-announcement";
 
 class Example extends React.Component {
@@ -115,7 +116,8 @@ class Example extends React.Component {
         title="Here is your component"
         subtitle="The best announcement component for React is finally here. Install it in all your projects."
         link="https://github.com/kristofferandreasen/react-popup-announcement"
-        imageSource={Logo}
+        imageSource={Image}
+        buttonText="Click here!"
         daysToLive={3}
         secondsBeforeBannerShows={20}
         closeIconSize={30}
@@ -135,6 +137,7 @@ class Example extends React.Component {
 | `subtitle`                 | string | yes      |               | The general card text on the announcement                                                                                         |
 | `imageSource`              | string | yes      |               | The image source string used on the left side of the image. Use a square image for the best results. Dimensions are 68x68 pixels. |
 | `link`                     | string | yes      |               | The link used when the announcement is clicked.                                                                                   |
+| `buttonText`               | string | yes      |               | The text displayed on the button.                                                                                                 |
 | `daysToLive`               | number | no       | 7             | An optional property specifying the number of days the cookie will live before the announcement is shown again to a user.         |
 | `secondsBeforeBannerShows` | number | no       | 5             | The number of seconds a user has to keep the page open before the announcement is shown.                                          |
 | `animateInDuration`        | number | no       | 1000          | Changes the duration of the fade-in animation.                                                                                    |
