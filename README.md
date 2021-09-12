@@ -6,7 +6,7 @@
   🖥️ Create beautiful pop-ups on your website with React. This library is especially suited for static websites 🖥️
 </div>
 <div align="center">
-  This simple and modern component makes it easier for you to engage with your visitors in a non-intrusive way.
+  This simple and modern component makes it easier for you to engage with your visitors.
   The component is fully responsive and will render perfectly on desktop, tablets and mobile.
 </div>
 
