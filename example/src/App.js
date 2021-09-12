@@ -57,8 +57,8 @@ const backgroundStyles = {
 }
 
 const buttonStyle = {
-  color: '#FFF',
-  backgroundColor: '#FF295C',
+  color: '#09282b',
+  backgroundColor: '#DEDED9',
   fontWeight: 400,
   fontSize: 14,
   paddingRight: 14,
@@ -71,7 +71,7 @@ const buttonStyle = {
 }
 
 const icon = {
-  color: '#FFF',
+  color: '#09282b',
   marginLeft: 10,
   marginBottom: 2,
   verticalAlign: 'middle'
