@@ -145,14 +145,6 @@ class Example extends React.Component {
 
 ---
 
-## Responsive
-
-The announcement is shown on the left side of the screen on desktop and centered at the bottom on mobile.
-
-<p align="center">
-  <img src="./media/mobile-gif.gif" alt="mobile gif">
-</p>
-
 ## Developing
 
 The project is bootstrapped with [create-react-library](https://github.com/transitive-bullshit/create-react-library) and TypeScript has been added to the project. You can read more about the development workflow in the [project docs](https://github.com/transitive-bullshit/create-react-library).
