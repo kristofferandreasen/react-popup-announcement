@@ -1,4 +1,6 @@
-# React Popup Announcement
+<div align="center">
+ <h1>React Popup Announcement</h1>
+</div>
 
 <div align="center">
   🖥️ Create beautiful pop-ups on your website with React. This library is especially suited for static websites 🖥️
