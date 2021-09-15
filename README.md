@@ -131,17 +131,17 @@ class Example extends React.Component {
 
 ## Properties
 
-| Property                   | Type   | Required | Default value | Description                                                                                                                       |
-| :------------------------- | :----- | :------- | :------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
-| `title`                    | string | yes      |               | The title of the announcement                                                                                                     |
-| `subtitle`                 | string | yes      |               | The general card text on the announcement                                                                                         |
-| `imageSource`              | string | yes      |               | The image source string used on the left side of the image. Use a square image for the best results. Dimensions are 68x68 pixels. |
-| `link`                     | string | yes      |               | The link used when the announcement is clicked.                                                                                   |
-| `buttonText`               | string | yes      |               | The text displayed on the button.                                                                                                 |
-| `daysToLive`               | number | no       | 7             | An optional property specifying the number of days the cookie will live before the announcement is shown again to a user.         |
-| `secondsBeforeBannerShows` | number | no       | 5             | The number of seconds a user has to keep the page open before the announcement is shown.                                          |
-| `animateInDuration`        | number | no       | 1000          | Changes the duration of the fade-in animation.                                                                                    |
-| `animateOutDuration`       | number | no       | 30            | Change the duration of the fade-out animation.                                                                                    |
+| Property                   | Type                                              | Required | Default value | Description                                                                                                                       |
+| :------------------------- | :------------------------------------------------ | :------- | :------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
+| `title`                    | string                                            | yes      |               | The title of the announcement                                                                                                     |
+| `subtitle`                 | string                                            | yes      |               | The general card text on the announcement                                                                                         |
+| `imageSource`              | string                                            | yes      |               | The image source string used on the left side of the image. Use a square image for the best results. Dimensions are 68x68 pixels. |
+| `onBannerClick`            | (event: React.MouseEvent<HTMLDivElement>) => void | yes      |               | The function triggered on click on the banner.                                                                                    |
+| `buttonText`               | string                                            | yes      |               | The text displayed on the button.                                                                                                 |
+| `daysToLive`               | number                                            | no       | 7             | An optional property specifying the number of days the cookie will live before the announcement is shown again to a user.         |
+| `secondsBeforeBannerShows` | number                                            | no       | 5             | The number of seconds a user has to keep the page open before the announcement is shown.                                          |
+| `animateInDuration`        | number                                            | no       | 1000          | Changes the duration of the fade-in animation.                                                                                    |
+| `animateOutDuration`       | number                                            | no       | 30            | Change the duration of the fade-out animation.                                                                                    |
 
 ---
 
