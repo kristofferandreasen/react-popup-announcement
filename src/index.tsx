@@ -19,9 +19,6 @@ export interface ComponentProps {
    */
   imageSource: string;
 
-  /** The link used when the announcement is clicked. */
-  link: string;
-
   /** The text displayed on the button. */
   buttonText: string;
 
@@ -54,19 +51,24 @@ export interface ComponentProps {
    * Change the duration of the fade-out animation (defaults to 300ms)
    */
   animateOutDuration?: number;
+
+  /**
+   * Adds a custom banner click besides the link
+   */
+  onBannerClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 const Announcement: React.FunctionComponent<ComponentProps> = ({
   title,
   subtitle,
   imageSource,
-  link,
   buttonText,
   daysToLive,
   secondsBeforeBannerShows,
   closeIconSize,
   animateInDuration,
-  animateOutDuration
+  animateOutDuration,
+  onBannerClick
 }) => {
   const [cookies, setCookie] = useCookies(["banner"]);
   const [showBanner, setShowBanner] = useState<boolean>(false);
@@ -102,15 +104,6 @@ const Announcement: React.FunctionComponent<ComponentProps> = ({
     setCookie,
     showBanner
   ]);
-
-  /**
-   * Executed when the announcement
-   * is clicked and opens the link
-   * in a new window.
-   */
-  const openLink = (): void => {
-    window.open(link, "_blank");
-  };
 
   /**
    * Executes when the close icon
@@ -150,12 +143,19 @@ const Announcement: React.FunctionComponent<ComponentProps> = ({
         }}
       >
         <img
-          onClick={openLink}
+          onClick={e => {
+            onBannerClick(e);
+          }}
           style={styles.imageStyle}
           src={imageSource}
           alt="Banner"
         />
-        <div onClick={openLink} style={styles.textWrapper}>
+        <div
+          onClick={e => {
+            onBannerClick(e);
+          }}
+          style={styles.textWrapper}
+        >
           <h3 style={styles.titleStyle}>{title}</h3>
           <p style={styles.subtitleStyle}>{truncate(subtitle)}</p>
           <div style={styles.button}>

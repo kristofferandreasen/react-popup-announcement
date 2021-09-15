@@ -18,7 +18,14 @@ class App extends Component {
     cookies.remove('banner')
   }
 
+  
+
   render () {
+    
+    function openLink() {
+      window.open("https://github.com/kristofferandreasen/react-popup-announcement", "_blank");
+    }
+
     return (
       <div style={backgroundStyles}>
         <div style={center}>
@@ -43,6 +50,7 @@ class App extends Component {
           buttonText="Click here"
           imageSource={Logo}
           closeIconSize={25}
+          onBannerClick={openLink}
         />
       </div>
     )
