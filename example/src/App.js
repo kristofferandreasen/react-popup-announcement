@@ -61,7 +61,8 @@ const backgroundStyles = {
   paddingTop: 100,
   paddingBottom: 100,
   paddingRight: 15,
-  paddingLeft: 15
+  paddingLeft: 15,
+  minHeight: '1000px'
 }
 
 const buttonStyle = {
